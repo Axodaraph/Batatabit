@@ -149,19 +149,36 @@ main {
 /* Tablas en HTML */
 .main-tables-container{
     display: flex;
-    height: 400px;
+    height: 380px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
 .main-currency-table {
     width: 70%;
-    min-width: 235px;
+    min-width: 240px;
     max-width: 500px;
     height: 360px;
     scroll-snap-align: center;
-    margin: 0 40px;
+    margin: 0 40px 0;
     font-family: "Inter", sans-serif;
+}
+@media (min-width: 360px){
+    .main-currency-table{
+        margin: 0 60px 0;
+    }
+}
+
+@media (min-width: 380px){
+    .main-currency-table{
+        margin: 0 70px 0;
+    }
+}
+
+@media (min-width: 400px){
+    .main-currency-table{
+        margin: 0 80px 0;
+    }
 }
 #comisiones {
     color: var(--secondary-blue);
